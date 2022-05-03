@@ -1,0 +1,202 @@
+body{
+    width: 1440px;
+    margin: 0 auto;
+    background: #F3F5FC;
+}
+
+h1{
+    position: absolute;
+    display: none;
+}
+
+.contenedor-principal{
+    width: 1440px;
+    height: 930px;
+    display: flex;
+    flex-direction: row;
+}
+
+.area-encriptar{
+    width: 1000px;
+    height: 930px;
+}
+
+.area-encriptar textarea{
+    margin: 168px 0 30px 240px;
+    width: 577px;
+    height: 547px;
+    border: none;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+    background: none;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+.area-encriptar textarea::placeholder{
+    color: #0A3871;
+    opacity: 0.8;
+}
+
+.indicacion{
+    height: 30px;
+    margin: 0 0 16px 240px;
+    display: flex;
+    align-items: center; 
+}
+
+.indicacion p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    margin-left: 8px;
+}
+
+.botones{
+    width: 680px;
+    height: 67px;
+    display: flex;
+    margin-left: 240px;
+    justify-content: space-between;
+}
+
+.btn-encriptar, .btn-desencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 19px;
+}
+
+.btn-encriptar{
+    background: #0A3871;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-encriptar:hover{
+    background: #052144;
+    font-size: 28px;
+    box-shadow: 0px 0px 15px 1px #0a387191;
+}
+
+.btn-desencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    cursor: pointer;
+}
+
+.btn-desencriptar:hover{
+    background: #c3d6ee;
+    font-size: 28px;
+    box-shadow: 0px 0px 15px 1px #0a387191;
+}
+
+
+
+
+/***Area para mostrar el texto respuesta***/
+
+.area-respuesta{
+    width: 440px;
+    height: 930px;
+}
+
+
+/*** AREA RESPUESTA ***/
+
+.contenedor-mensaje, .contenedor-resultado{
+    width: 400px;
+    height: 850px;
+    position: absolute;
+    top: 40px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+    /*** Area ningun mensaje encontrado ***/
+
+
+
+.contenedor-mensaje{
+    align-items: center;
+}
+
+
+.contenedor-mensaje ul{
+    width: 336px;
+}
+
+.contenedor-mensaje h3{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+}
+
+.contenedor-mensaje h4{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+}
+
+/*** Area mensaje resultado ***/
+
+.texto-resultado{
+    width: 336px;
+    height: 687px;
+    font-size: 24px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #0A3871;
+    border:1px solid #0A3871;
+    box-sizing: border-box;
+    margin: 32px auto;
+}
+
+.btn-copiar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    box-sizing: border-box;
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.btn-copiar:hover{
+    background: #c3d6ee;
+    font-size: 28px;
+    box-shadow: 0px 0px 15px 1px #0a387191;
+}
+

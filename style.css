@@ -1,0 +1,260 @@
+body{
+    width: 1440px;
+    margin: 0 auto;
+    background: #F3F5FC;
+}
+
+h1 img{
+    position: absolute;
+    width: 100px;
+}
+
+.contenedor-principal{
+    width: 1440px;
+    height: 930px;
+    display: grid;
+    grid-template-columns: 1000px 440px;
+}
+
+
+.area-encriptar{
+    width: 1000px;
+    height: 930px;
+    display: grid;
+    grid-template-rows: 1fr 103px;
+    align-content: space-between;
+    gap: 30px;
+}
+
+.area-encriptar textarea{
+    width: 577px;
+    height: 550px;
+    margin-top: 168px;
+    margin-left: 240px;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+    background: none;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+.area-encriptar textarea::placeholder{
+    color: #0A3871;
+    opacity: 0.8;
+}
+
+.area-encriptar textarea::-webkit-scrollbar {
+    width: 10px;
+}
+
+.area-encriptar textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.area-encriptar textarea::-webkit-scrollbar-thumb {
+    background: #D8DFE8;
+    border-radius: 10px;
+}
+
+.area-encriptar textarea::-webkit-scrollbar-thumb:hover {
+    background: #0A3871;
+}
+
+.contenedor-indicacion-botones{
+    position: relative;
+    bottom: 72px;
+    margin-bottom: 60px;
+    margin-left: 240px;
+    display: grid;
+    gap: 16px;
+}
+
+.indicacion{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 8px;
+    align-content: center;
+}
+
+.indicacion p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}
+
+.botones{
+    width: 680px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.btn-encriptar, .btn-desencriptar{
+    height: 67px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 19px;
+}
+
+.btn-encriptar{
+    background: #0A3871;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-encriptar:hover{
+    background: #052144;
+    font-size: 28px;
+    box-shadow: 0px 0px 15px 1px #0a387191;
+}
+
+.btn-desencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    cursor: pointer;
+}
+
+.btn-desencriptar:hover{
+    background: #c3d6ee;
+    font-size: 28px;
+    box-shadow: 0px 0px 15px 1px #0a387191;
+}
+
+
+
+/***Area para mostrar el texto respuesta***/
+
+.area-respuesta{
+    width: 440px;
+    height: 930px;
+}
+
+/*** AREA RESPUESTA ***/
+
+    
+
+.contenedor-mensaje, .contenedor-resultado{
+    width: 400px;
+    height: 850px;
+    position: absolute;
+    top: 40px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+
+    /*** Area ningun mensaje encontrado ***/
+
+.contenedor-mensaje{
+    align-items: center;
+}
+
+.contenedor-mensaje ul{
+    width: 336px;
+    display: grid;
+    gap: 16px;
+}
+
+.contenedor-mensaje h3{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+}
+    
+.contenedor-mensaje h4{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+}
+
+    /*** Area mensaje resultado ***/
+
+.contenedor-resultado ul{
+    display: grid;
+    align-content: space-between;
+}
+
+
+.texto-resultado{
+    width: 336px;
+    height: 687px;
+    font-size: 24px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #0A3871;
+    position: relative;
+    top: 32px;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+/* Estilos scrollbar texto resultado*/
+.texto-resultado::-webkit-scrollbar {
+    width: 10px;
+}
+
+.texto-resultado::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.texto-resultado::-webkit-scrollbar-thumb {
+    background: #D8DFE8;
+    border-radius: 10px;
+}
+
+.texto-resultado::-webkit-scrollbar-thumb:hover {
+    background: #0A3871;
+}
+    
+.btn-copiar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    box-sizing: border-box;
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 19px;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+
+.btn-copiar:hover{
+    background: #c3d6ee;
+    font-size: 28px;
+    box-shadow: 0px 0px 15px 1px #0a387191;
+}
+
+
+
+
+
